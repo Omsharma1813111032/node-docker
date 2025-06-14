@@ -4,6 +4,7 @@ const app = require("express")();
 
 
 app.get("/",(req,res)=>{
+    console.log("Yes it is working!!!");
     res.send("Hey its running!");
 })
 
