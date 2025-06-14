@@ -1,11 +1,13 @@
 require("dotenv").config();
-
+const morgan = require("morgan")
 const app = require("express")();
 
 
+app.use(morgan("tiny"))
+
 app.get("/",(req,res)=>{
-    console.log("Yes it is working!!!");
-    res.send("Hey its running!");
+    console.log("hmm!!!");
+    res.send("Hey!");
 })
 
 
